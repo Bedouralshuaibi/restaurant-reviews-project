@@ -60,7 +60,7 @@ fillRestaurantHTML = (restaurant = self.restaurant) => {
   const image = document.getElementById('restaurant-img');
   image.className = 'restaurant-img'
   image.src = DBHelper.imageUrlForRestaurant(restaurant);
-  image.alt = restaurant.name;
+  image.alt = "this is a picture of " + restaurant.name + " restaurant.";
 
   const cuisine = document.getElementById('restaurant-cuisine');
   cuisine.innerHTML = restaurant.cuisine_type;
@@ -127,7 +127,7 @@ createReviewHTML = (review) => {
   name.innerHTML = review.name;
   li.appendChild(wrapper);
   wrapper.appendChild(name);
-  
+
   const date = document.createElement('p');
   date.innerHTML = review.date;
   date.classList.add('reviewerDate' );

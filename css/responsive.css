@@ -1,22 +1,22 @@
 
 @media screen and (min-width:768px){
 
-#maincontent{
-
-
-}
   nav h1 a{
     font-size: 20pt;
   }
 
- #restaurants-list {
+ #restaurants-list , #reviews-list{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
  }
 
+
+  #reviews-list li{
+width: 45%;
+  }
  #restaurants-list li{
-   width: 35%;
+   width: 40%;
 
  }
 
@@ -24,30 +24,14 @@
   width: 100%;
 }
 
-#restaurant-container, #reviews-container{
-  width: 80%;
-  margin: 0 auto;
-}
-
 #restaurant-cuisine{
   padding: 5px 0;
 }
-   #reviews-list{
-     display: flex;
-     flex-wrap: wrap;
-
-   }
-   #reviews-list li{
-     width: 40%;
-   }
-   #reviews-list li:nth-child(2){
-     margin-left:30px;
-   }
-   .rating{
-     font-weight: 500;
-   }
-
+.rating{
+  font-weight: 500;
+  width: 40%;
 }
+
 
 /*  ----------------------- DESKTOP ------------*/
 
@@ -57,45 +41,51 @@
 #map {
     height: 500px;
   }
-#restaurant-container{
-  width: 80%;
-}
-#restaurant-name {
-  font-size: 20pt;
-}
  #restaurants-list{
    justify-content: space-between;
  }
   #restaurants-list li{
-    width: 35%;
+    width: 30%;
     max-height: 70%;
-
   }
-  #restaurant-img {
-  	max-width: 60%;
-    margin: 0 50px;
-    padding: 0 90px;
-    align-items: center;
-
+#restaurant-container{
+width: 100%;
+margin: 0 100px;
+padding-left: 200px;
+  }
+  #restaurant-name {
+    font-size: 24pt;
+  }
+#restaurant-img {
+  	 max-width: 70%;
 
 }
 #restaurant-cuisine{
-  width: 60%;
+  /* width: 60%;
   margin: 0 140px;
-  max-height: 40px;
+  max-height: 40px; */
 
   }
 #restaurant-address {
   font-size: 16pt;
-  padding-top: 10px;
 
 }
-#restaurant-cuisine, #restaurant-address ,#restaurant-hours{
-  margin: 0 140px;
+#review-container{
+  width: 90%;
 
 }
-#rating p{
+#reviews-list{
+  justify-content: space-between;
+}
+#reviews-list li{
+width: 30%;
+}
+.rating{
+  width: 40%;
+}
+.rating p{
   padding: 10px;
   font-size: 16px;
+
 }
 }
